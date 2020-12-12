@@ -19,6 +19,6 @@ public class Starship extends BaseEntity{
     @Column(name = "military")
     private Boolean military;
     @OneToOne(mappedBy = "starship")
-    private Person person;
+    private User user;
 
 }

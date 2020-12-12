@@ -16,6 +16,6 @@ public class Planet extends BaseEntity {
     @Column(name = "information")
     private String information;
     @ManyToMany(mappedBy = "visitedPlanets")
-    private Set<Person> personVisited;
+    private Set<User> userVisited;
 
 }
